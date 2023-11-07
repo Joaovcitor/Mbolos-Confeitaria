@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Produtos/bolosDeFesta/modelo.css" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <title>Orçamento do Bolo de festa!</title>
+  </head>
+  <body data-produto="bolo34">
+    <div class="back">
+        <nav class="texto">
+          <nav class="texto-bolo">
+            <span class="cor-vermelha">MBolos</span>
+            <span class="brow">Confeitaria</span>
+          </nav>
+        </nav>
+      </div>
+      <nav class="galeria">
+        <img class="foto" src="/fotosBolos/Bolo 9.jpg" alt="" />
+      </nav>
+    <div class="formulario">
+      <form id="formulario">
+        <p class="pagamento">Escolha a massa do bolo:</p>
+        <div class="massa">
+          <select name="" id="massa">
+            <option value="selecione">Selecione</option>
+            <option value="branca">Branca</option>
+            <option value="chocolate">Chocolate</option>
+          </select>
+        </div>
+
+        <p class="pagamento">Escolha o primeiro recheio:</p>
+        <div class="recheios">
+          <select class="recheios" id="recheios">
+            <option id="r1" value="selecione">Selecione</option>
+            <option id="r2" value="Ninho">Ninho</option>
+            <option id="r3" value="Beijinho">Beijinho</option>
+            <option id="r4" value="Brigadeiro">Brigadeiro</option>
+            <option id="r5" value="Bombom">Bombom</option>
+            <option id="r6" value="Doce de Leite">Doce de Leite</option>
+            <option id="r7" value="Doce de Leite crocante">
+              Doce de Leite crocante
+            </option>
+            <option value="Ninho com amendoin">Ninho com amendoin</option>
+          </select>
+        </div>
+        <p class="pagamento">Escolha o segundo recheio:</p>
+        <div class="recheios2">
+          <select class="recheios2" id="recheios2">
+            <option id="r1" value="selecione">Selecione</option>
+            <option id="r2" value="Ninho">Ninho</option>
+            <option id="r3" value="Beijinho">Beijinho</option>
+            <option id="r4" value="Brigadeiro">Brigadeiro</option>
+            <option id="r5" value="Bombom">Bombom</option>
+            <option id="r6" value="Doce de Leite">Doce de Leite</option>
+            <option id="r7" value="Doce de Leite crocante">
+              Doce de Leite crocante
+            </option>
+            <option value="Ninho com amendoin">Ninho com amendoin</option>
+          </select>
+        </div>
+        <p class="pagamento">Escolha o terceiro recheio:</p>
+        <div class="recheios2">
+          <select class="recheios2" id="recheios3">
+            <option id="r1" value="selecione">Selecione</option>
+            <option id="r2" value="Ninho">Ninho</option>
+            <option id="r3" value="Beijinho">Beijinho</option>
+            <option id="r4" value="Brigadeiro">Brigadeiro</option>
+            <option id="r5" value="Bombom">Bombom</option>
+            <option id="r6" value="Doce de Leite">Doce de Leite</option>
+            <option id="r7" value="Doce de Leite crocante">
+              Doce de Leite crocante
+            </option>
+            <option value="Ninho com amendoin">Ninho com amendoin</option>
+          </select>
+        </div>
+        <p class="escolha">Deseja colocar alguma fruta no recheio?</p>
+        <label for=""><input type="checkbox" name="sim" id="sim" />Sim </label>
+        <label for=""> <input type="checkbox" name="nao" id="nao" />Não </label>
+        <div class="elementoOculto" style="display: none">
+          <p>Coloque:</p>
+          <textarea class="frutas" name="" id="" cols="30" rows="3"></textarea>
+          <p class="adicional">OBS.: Recheios com fruta tem adicional</p>
+        </div>
+        <p class="pagamento">Formas de pagamento:</p>
+        <select class="pg-select" name="" id="pagamento">
+          <option value="selecione">Selecione</option>
+          <option value="dinheiro">Dinheiro</option>
+          <option value="pix">Pix</option>
+          <option value="cartao">Cartão</option>
+        </select>
+        <div class="alerta"></div>
+        <button class="bnt-encomenda">Encomendar</button>
+      </form>
+    </div>
+    <script src="/Produtos/bolosDeFesta/bolo2Andares/4recheios.js"></script>
+  </body>
+</html>

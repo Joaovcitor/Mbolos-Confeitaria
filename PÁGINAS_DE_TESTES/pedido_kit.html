@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/PÁGINAS_DE_TESTES/pedido.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&family=Playfair+Display&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pedido Combo</title>
+  </head>
+  <body>
+    <header class="topo-site">
+      <nav class="textos">
+        <p class="titulo-site">
+          <span class="red">Mbolos</span> <span class="brow">Confeitaria</span>
+        </p>
+      </nav>
+      <!-- <img class="img-carrinho" src="/Imagens/carrinho-carrinho.png" alt="" /> -->
+    </header>
+
+    <section class="produtos">
+      <h1>Agora é só escolher</h1>
+      <div class="produtosColum">
+        <div data-kit="kit1" class="coluna-produto">
+          <p class="nome-produto">Kit para 10 pessoas</p>
+          <p class="conteudo">O kit vem com:</p>
+          <p class="descricao">
+            1 Bolo Redondo Vulcão de 8 a 10 Fatias, 100 salgados, 35 Docinhos, 1
+            Refrigerante
+          </p>
+          <p class="value">
+            Tudo isso por <span class="green">apenas R$98,00</span>
+          </p>
+        </div>
+        <br />
+        <div data-kit="kit2" class="coluna-produto">
+          <p class="nome-produto">Kit para 15 pessoas</p>
+          <p class="conteudo">O kit vem com:</p>
+          <p class="descricao">
+            1 Bolo Redondo de 12 a 15 Fatias, 100 Salgados, 50 Docinhos e 1
+            Refrigerante
+          </p>
+          <p class="value">
+            Tudo isso por <span class="green">apenas R$150,00</span>
+          </p>
+        </div>
+        <br />
+        <div data-kit="kit3" class="coluna-produto">
+          <p class="nome-produto">Kit para 20 pessoas</p>
+          <p class="conteudo">O kit vem com:</p>
+          <p class="descricao">
+            1 Bolo Redondo Confeitado de 18 a 20 Fatias, 250 Salgados, 100
+            Docinhos e 1 Refrigerante
+          </p>
+          <p class="value">
+            Tudo isso por <span class="green">apenas R$257,50</span>
+          </p>
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <a href=""><img src="/Imagens/cancelar.png" alt="" class="excluir" /></a>
+    <section style="display: none" class="pedido-personalizado-vulcao">
+      <form id="pedido-do-combo" action="">
+        <p class="nome_produto"></p>
+        <p class="produto-descricao">Recheio do bolo</p>
+        <select name="" id="recheio">
+          <option value="Selecione">Selecione</option>
+          <option value="Ninho">Ninho</option>
+          <option value="Massa Branca">Chocolate</option>
+        </select>
+        <p class="produto-descricao">Tipos de salgados:</p>
+        <div class="salgados">
+          <label for="bolinha"
+            ><input
+              type="checkbox"
+              id="bolinha"
+              name="produto"
+              value="Bolinha de queijo"
+            />
+            Bolinha de queijo</label
+          >
+
+          <label for="coxinha"
+            ><input
+              type="checkbox"
+              id="coxinha"
+              name="produto"
+              value="Coxinha"
+            />Coxinha</label
+          >
+
+          <label for="risole"
+            ><input
+              type="checkbox"
+              id="risole"
+              name="produto"
+              value="Risole"
+            />Risole</label
+          >
+
+          <label for="misturado"
+            ><input
+              type="checkbox"
+              id="misturado"
+              name="produto"
+              value="Misturado"
+            />Misturado</label
+          >
+        </div>
+
+        <p class="produto-descricao">Forma de pagamento</p>
+        <select name="" id="pagamento">
+          <option value="Selecione">Selecione</option>
+          <option value="Cartão">Cartão</option>
+          <option value="PIX">PIX</option>
+          <option value="Dinheiro">Dinheiro</option>
+        </select>
+        <p class="produto-descricao">Endereço:</p>
+        <input type="text" name="" id="" class="endereco" />
+        <!-- <p class="precoProduto"></p> -->
+        <button class="bnt-venda">Comprar</button>
+      </form>
+      <form action="" class="formCarrinho">
+        <button class="bnt_add_carrinho">Adicionar ao carrinho</button>
+      </form>
+    </section>
+    <div class="imgDoCarrinho">
+      <img class="img-carrinho" src="/Imagens/carrinho-carrinho.png" alt="" />
+    </div>
+
+    <div style="display: none" class="compras">
+      <div>
+        <a href="#" id="remove-carrinho">fechar</a>
+        <h3>Seus pedidos:</h3>
+      </div>
+      <div class="produtos_add"></div>
+      <button class="bntCarrinho">Comprar</button>
+    </div>
+
+    <script src="/PÁGINAS_DE_TESTES/Pedido_codigo.js"></script>
+    <script src="/Produtos/combos_kit/pedidos/codigo_carrinho.js"></script>
+  </body>
+</html>

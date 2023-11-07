@@ -1,0 +1,233 @@
+* {
+  margin: 0px;
+  text-decoration: none;
+}
+.topo-site {
+  border-bottom: solid 1px grey;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.resultado {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  width: 200px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.alerta {
+  color: black;
+}
+
+.red {
+  color: #faa301;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.brow {
+  color: brown;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* .produtos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fa6a64;
+} */
+
+.coluna_produto {
+  background-color: #e23d75;
+  width: 180px;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  /* margin-bottom: 5px; */
+  margin-top: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 17px -2px rgba(0, 0, 0, 0.75);
+}
+
+.backDosProdutos {
+  background-color: #730074;
+  padding: 5px;
+}
+
+.back_abaixo {
+  background-color: #210123;
+  width: 220px;
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  padding: 10px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 0px;
+}
+
+.produtosRow {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 0px;
+}
+/* textos */
+
+.Local {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.bar {
+  border-bottom: solid 3px white;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.texto-boa-vindas {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ebc83a;
+  font-family: "Rubik", sans-serif;
+}
+
+.produtos-lista {
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+  font-family: "Rubik", sans-serif;
+}
+
+.name_produto {
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+
+.descricao {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+.produt {
+  color: rgb(255, 255, 255);
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+.principal {
+  background-color: #210123;
+  padding: 20px;
+  width: auto;
+}
+
+/* categorias e backgrounds */
+
+.catProdutos {
+  background-color: #002930;
+  width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+/* botao */
+
+.pedir {
+  background-color: #002930;
+  color: white;
+  width: 70px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 2px;
+  border: none;
+  border-radius: 16px;
+  margin-bottom: 7px;
+}
+
+.listas {
+  display: flex;
+  justify-content: end;
+  position: fixed;
+  left: 60%;
+  flex-direction: column;
+  font-size: 18px;
+  width: 34.6%;
+  background-color: #e84a5f;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.material-symbols-outlined,
+.material-symbols-outlined-close {
+  justify-content: end;
+  position: relative;
+  left: 40%;
+
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined-close {
+  width: 30px;
+}
+
+img {
+  width: 180px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* border-radius: 10px; */
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
