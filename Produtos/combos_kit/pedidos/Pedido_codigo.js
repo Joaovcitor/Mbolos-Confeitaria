@@ -134,14 +134,10 @@ function imprimeProdutos() {
     let checkboxes = document.querySelectorAll("input[name=produto]:checked");
     let selecionados = Array.from(checkboxes).map((cb) => cb.value);
     const listaProdutos = {
-      nome: produto.descricao,
-      recheio: recheio.value,
-      salgado: selecionados,
+      nome: produto.descricao
     };
     listaDeProdutos.push(
-      listaProdutos.nome,
-      listaProdutos.recheio,
-      listaProdutos.salgado
+      listaProdutos.nome
     );
     // console.log(listaDeProdutos);
   }
@@ -167,7 +163,7 @@ function criaDivProduto() {
 }
 
 function geraMsgCarrinho() {
-  return `Olá, eu quero os seguintes produtos: ${listaDeProdutos.join(", ")}`;
+  return `Olá, eu quero os seguintes produtos: ${listaDeProdutos}`;
 }
 
 function carrinho() {
