@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Produtos/combos_kit/pedidos/comboSalgado.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&family=Playfair+Display:wght@900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <title>Mini Salgadinhos</title>
+  </head>
+  <body>
+    <header class="topo-site">
+      <nav class="textos">
+        <p class="titulo-site">
+          <span class="red">MBOLOS</span> <span class="brow">CONFEITARIA</span>
+        </p>
+      </nav>
+    </header>
+    <section class="tabelaDePrecos">
+      <!-- <div class="nomeProdutos">
+        <h2>Temos:</h2>
+        <h3 class="salgado">Coxinha</h3>
+        <h3 class="salgado">Bolinha de Queijo</h3>
+        <h3 class="salgado">Risole</h3>
+      </div> -->
+      <!-- <div class="precoProdutos">
+            <h2>Valores:</h2>
+            <h3 class="salgado">Porção de 25 unidades: R$ 10,00</h3>
+            <h3 class="salgado">Meio Cento de salgado(50 Unidades): R$ 18,00</h3>
+            <h3 class="salgado">Cento de salgado: R$ 35,00</h3>
+        </div> -->
+    </section>
+    <section class="produtos">
+      <h1>Apenas as Porções</h1>
+      <nav class="bar"></nav>
+      <!-- <h2>Basta clicar no produto</h2> -->
+      <div data-produto="p25" class="coluna-produto">
+        <h4 class="nome_produto_obj"></h4>
+        <p class="descricao"></p>
+        <p class="preco"></p>
+      </div>
+      <div data-produto="p50" class="coluna-produto">
+        <h4 class="nome_produto_obj"></h4>
+        <p class="descricao"></p>
+        <p class="preco"></p>
+      </div>
+      <div data-produto="p100" class="coluna-produto">
+        <h4 class="nome_produto_obj"></h4>
+        <p class="descricao"></p>
+        <p class="preco"></p>
+      </div>
+    </section>
+    <!-- <nav class="bar"></nav> -->
+    <!-- <section class="refrigerantes">
+      <h1 class="ref">Vai um refri?</h1>
+      <nav class="bar"></nav>
+      <div class="produtosColum">
+        <div data-refri="r1" id="refri" class="coluna-produto-refri">
+          <h4 class="nome_produto_obj_ref"></h4>
+          <img src="" alt="" class="imgRef" />
+          <p class="descricao_ref"></p>
+          <p class="preco_ref"></p>
+        </div>
+        <div data-refri="r2" id="refri" class="coluna-produto-refri">
+          <h4 class="nome_produto_obj_ref"></h4>
+          <img src="" alt="" class="imgRef" />
+          <p class="descricao_ref"></p>
+          <p class="preco_ref"></p>
+        </div>
+        <div data-refri="r3" id="refri" class="coluna-produto-refri">
+          <h4 class="nome_produto_obj_ref"></h4>
+          <img src="" alt="" class="imgRef" />
+          <p class="descricao_ref"></p>
+          <p class="preco_ref"></p>
+        </div>
+        <div data-refri="r4" id="refri" class="coluna-produto-refri">
+          <h4 class="nome_produto_obj_ref"></h4>
+          <img src="" alt="" class="imgRef" />
+          <p class="descricao_ref"></p>
+          <p class="preco_ref"></p>
+        </div>
+      </div>
+    </section> -->
+    <a href=""><img src="/Imagens/cancelar.png" alt="" class="excluir" /></a>
+    <form id="pedido_porcao" action="">
+      <section class="pedido-personalizado-vulcao">
+        <p class="nome-do-pedido"></p>
+        <p class="endereco">Digite seu endereço</p>
+        <input type="text" name="" id="endereco" />
+        <p class="pagamento">Forma de pagamento</p>
+        <select name="" id="pagamento">
+          <option value="Selecione">Selecione</option>
+          <option value="PIX">PIX</option>
+          <option value="Cartão">Cartão</option>
+          <option value="Dinheiro">Dinheiro</option>
+        </select>
+        <p>Alguma observação?</p>
+        <textarea name="Observação" id="obs" cols="30" rows="5" class="obs">
+        </textarea>
+        <button class="bnt-venda">Comprar</button>
+        <button class="bnt_add_carrinho">Adicionar ao Carrinho</button>
+      </section>
+    </form>
+    <div style="display: none" class="compras">
+      <div>
+        <a href="#" id="remove-carrinho">fechar</a>
+        <h3>Seus pedidos:</h3>
+      </div>
+      <div class="produtos_add"></div>
+      <button class="bntCarrinho">Comprar</button>
+    </div>
+    <div class="imgDoCarrinho">
+      <img class="img-carrinho" src="/Imagens/carrinho-carrinho.png" alt="" />
+    </div>
+    <script src="/PÁGINAS_DE_TESTES/Codigo_Combo.js"></script>
+  </body>
+</html>
