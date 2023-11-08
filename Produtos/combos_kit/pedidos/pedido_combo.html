@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="comboSalgado.css" />
+    <link rel="stylesheet" href="/Produtos/combos_kit/pedidos/comboSalgado.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -102,8 +102,23 @@
         <textarea name="Observação" id="obs" cols="30" rows="5" class="obs">
         </textarea>
         <button class="bnt-venda">Comprar</button>
+        <button class="bnt_add_carrinho">Adicionar ao Carrinho</button>
       </section>
     </form>
-    <script src="/Produtos/combos_kit/pedidos/Codigo_Combo.js"></script>
+    <div style="display: none" class="compras">
+      <div>
+        <a href="#" id="remove-carrinho">fechar</a>
+        <h3>Seus pedidos:</h3>
+      </div>
+      <div class="produtos_add"></div>
+      <div class="total">
+        <p>Valor total:</p>
+      </div>
+      <button class="bntCarrinho">Comprar</button>
+    </div>
+    <div class="imgDoCarrinho">
+      <img class="img-carrinho" src="/Imagens/carrinho-carrinho.png" alt="" />
+    </div>
+    <script src="/PÁGINAS_DE_TESTES/Codigo_Combo.js"></script>
   </body>
 </html>

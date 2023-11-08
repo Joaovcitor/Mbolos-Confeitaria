@@ -42,7 +42,7 @@ const produtosObjRefrigerantes = {
   },
 };
 
-let produtoAtual = null;
+// let produtoAtual = null;
 
 // AQUI VAI SERVIR PARA PODER REALIZAR A VENDA DIRETA, NÃO SE COMUNICANDO COM O CÓDIGO DE CARRINHO
 
@@ -138,3 +138,100 @@ function mostraRefri() {
   }
 }
 mostraRefri();
+
+// CARRINHO DE COMPRAS
+
+let listaDeProdutos = [];
+let total = 0;
+
+function somaValorDoCarrinho() {
+  if (produtoAtual && produtosObj && produtosObj[produtoAtual]) {
+    const produtos = produtosObj[produtoAtual];
+    total += produtos.preco;
+    const valor = document.querySelector(".total")
+    const p = criaPPreco()
+    valor.innerHTML = `Valor total R$ ${total}`
+    
+  } else {
+    console.log(
+      "produtoAtual ou produtosObj não está definido ou produtoAtual não é uma chave válida em produtosObj"
+    );
+  }
+}
+
+
+function carrinhoDeCompras() {
+  if (produtoAtual) {
+    const produtos = produtosObj[produtoAtual];
+    const listaProdutos = {
+      nome: produtos.nome,
+    };
+
+    listaDeProdutos.push(listaProdutos.nome);
+
+    const produtosAdd = document.querySelector(".produtos_add");
+    const p = criaPDescricao();
+    p.innerHTML = `${produtos.nome}`;
+    produtosAdd.appendChild(p);
+    somaValorDoCarrinho();
+  }
+}
+// carrinhoDeCompras()
+
+function addProdutosNoCarrinho() {
+  const img = document.querySelector(".img-carrinho");
+  img.style.display = "none";
+  const bnt = document.querySelector(".bnt_add_carrinho");
+  bnt.removeEventListener("click", function(){})
+  bnt.addEventListener("click", function (e) {
+    e.preventDefault();
+    img.style.display = "inline";
+    carrinhoDeCompras();
+  });
+}
+addProdutosNoCarrinho();
+
+function compraProdutosDoCarrinho() {
+  const compras = document.querySelector(".compras");
+  const img = document.querySelector(".img-carrinho");
+  const bnt = document.querySelector(".bntCarrinho");
+
+  img.addEventListener("click", function (e) {
+    e.preventDefault();
+    compras.style.display = "inline";
+  });
+
+  bnt.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    let link =
+      "https://wa.me/558899547981/?text=" +
+      encodeURIComponent(geraMsgCarrinho());
+    window.open(link);
+  });
+}
+compraProdutosDoCarrinho();
+
+function geraMsgCarrinho() {
+  return `Olá, eu quero os seguintes produtos: ${listaDeProdutos.join(", ")}`;
+}
+
+document.querySelector("body").addEventListener("click", function (e) {
+  if (e.target.matches("#remove-carrinho")) {
+    e.preventDefault();
+    const compras = document.querySelector(".compras");
+    // console.log("FUNCIONOU");
+    compras.style.display = "none";
+  }
+});
+
+function criaPDescricao() {
+  const p = document.createElement("p");
+  p.classList.add("produtoadd");
+  return p;
+}
+function criaPPreco() {
+  const p = document.createElement("p");
+  p.classList.add("produtoadd");
+  return p;
+}
